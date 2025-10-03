@@ -1,0 +1,211 @@
+/*
+  Archivo: styles.css
+  Este código debe guardarse en un archivo llamado 'styles.css'
+  en la misma carpeta que tu archivo 'index.html'.
+*/
+
+/* 1. Reseteo Básico y Fuente Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Fondo muy claro */
+    color: #333;
+}
+
+/* 2. Estilos del Encabezado (Header) y Navegación */
+header {
+    background-color: #3f51b5; /* Un azul corporativo */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Amarillo de acento */
+}
+
+/* Estilo para Menú Desplegable (Dropdown) */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3f51b5;
+    min-width: 180px;
+    z-index: 10;
+}
+
+li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown li a {
+    padding: 10px 15px;
+    font-weight: normal;
+}
+
+/* 3. Sección Principal (Hero/Banner) */
+#hero {
+    background: url('hero-background.jpg') no-repeat center center/cover; /* Reemplaza con una imagen tuya */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para legibilidad */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffd740;
+}
+
+/* 4. Sección de Servicios/Contenido */
+#servicios {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+#servicios h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #3f51b5;
+}
+
+.servicios-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servicio-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%; /* Para que quepan 3 por fila */
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.servicio-item:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-item h4 {
+    color: #3f51b5;
+    margin-top: 0;
+}
+
+/* 5. Pie de Página (Footer) */
+footer {
+    background-color: #2c3e50; /* Gris oscuro/negro */
+    color: white;
+    padding: 20px 5%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* 6. Media Query (Responsivo Básico) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .servicios-grid {
+        flex-direction: column;
+    }
+
+    .servicio-item {
+        margin-bottom: 20px;
+    }
+}
