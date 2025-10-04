@@ -98,84 +98,113 @@
                 <h3>Opciones de Compra y Precios</h3>
                 
                 <table class="specs-table">
-                    <thead>
-                        <tr>
-                            <th>Tamaño / Volumen</th>
-                            <th>Uso Recomendado</th>
-                            <th>En Stock</th>
-                            <th class="action-cell">Consultar Precio</th>
-                            <th>Pagar</th>
-                        </tr>
-                          <tr>
-                            <td>**20 Litros**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$230.000</span>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>**10 Litros**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$115.000</span>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>**5 Litros**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$59.000</span>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>**2 Litros**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$25.000</span>
-                            </td>
-                        </tr>
-                        
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>**1 Litro**</td>
-                            <td>Mantenimiento frecuente de equipos.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                            <span style="color: red; font-weight: bold;">$12.000</span> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>**500 ml**</td>
-                            <td>Uso doméstico y limpieza ocasional.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$6.000</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>**250 ml**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$3.000</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>**125 ml**</td>
-                            <td>Kits de viaje y reparaciones menores.</td>
-                            <td>En Stock</td>
-                            <td class="action-cell">
-                                <span style="color: red; font-weight: bold;">$1700</span>
-                            </td>
-                        </tr>
-                       
-                    </tbody>
-                </table>
+    <thead>
+        <tr>
+            <th>Tamaño / Volumen</th>
+            <th>Uso Recomendado</th>
+            <th>En Stock</th>
+            <th>Precio</th> 
+            <th class="action-cell">Pagar</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>**20 Litros**</td>
+            <td>Kit y reparaciones mayores (uso intensivo).</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$230.000</td>
+            <td class="action-cell">
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_20_LITROS" data-source="button">
+                </script>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>**10 Litros**</td>
+            <td>Kit y reparaciones medias.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$115.000</td>
+            <td class="action-cell">
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_10_LITROS" data-source="button">
+                </script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>**5 Litros**</td>
+            <td>Kit y reparaciones medias.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$59.000</td>
+            <td class="action-cell">
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_5_LITROS" data-source="button">
+                </script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>**2 Litros**</td>
+            <td>Kit y reparaciones menores.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$25.000</td>
+            <td class="action-cell">
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_2_LITROS" data-source="button">
+                </script>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>**1 Litro**</td>
+            <td>Mantenimiento frecuente de equipos.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$12.000</td>
+            <td class="action-cell">
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_1_LITRO" data-source="button">
+                </script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>**500 ml**</td>
+            <td>Uso doméstico y limpieza ocasional.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$6.000</td>
+            <td class="action-cell">
+                 <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_500_ML" data-source="button">
+                </script>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>**250 ml**</td>
+            <td>Kits de viaje y reparaciones menores.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$3.000</td>
+            <td class="action-cell">
+                 <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_250_ML" data-source="button">
+                </script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>**125 ml**</td>
+            <td>Kits de viaje y reparaciones menores.</td>
+            <td>En Stock</td>
+            <td style="color: red; font-weight: bold;">$1.700</td>
+            <td class="action-cell">
+                 <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="ID_DE_PREFERENCIA_PARA_125_ML" data-source="button">
+                </script>
+            </td>
+        </tr>
+    </tbody>
+</table>
                 <h3 style="margin-top: 40px;">Especificaciones Técnicas</h3>
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Pureza: 99.9%</li>
@@ -196,6 +225,7 @@
 </body>
 
 </html>
+
 
 
 
